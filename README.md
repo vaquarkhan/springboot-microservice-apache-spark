@@ -1,3 +1,3 @@
-# springboot-microservice-apache-spark
+# spring-boot-microservice-apache-spark
 
 #WIP
