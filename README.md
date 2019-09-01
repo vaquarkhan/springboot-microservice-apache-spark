@@ -2,7 +2,7 @@
 
 #WIP
 
-Import dataset into mangodb
+1) Import dataset into mangodb
 
 - https://docs.mongodb.com/compass/master/import-export/
 
@@ -10,3 +10,4 @@ Import dataset into mangodb
 ![Alt Text](https://github.com/vaquarkhan/springboot-microservice-apache-spark/blob/master/image/Mango-dataset.PNG)
 
 
+2) 
