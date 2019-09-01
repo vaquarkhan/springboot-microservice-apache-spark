@@ -10,6 +10,7 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.bson.Document;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -24,34 +25,30 @@ import com.mongodb.spark.rdd.api.java.JavaMongoRDD;
  *
  */
 @SpringBootApplication
-public class SpringApacheSparkApplication implements CommandLineRunner {
+public class SpringApacheSparkApplication{ //implements CommandLineRunner {
 
 	private static final Logger logger = Logger.getLogger(SpringApacheSparkApplication.class);
-
-	@Value("${spring.data.mongodb.uri}")
-	private String mongoDbConnectionUri;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringApacheSparkApplication.class, args);
 	}
 
+	
+	
+	
+	//@Autowired
+	//JavaSparkContext sc;
+	/*
 	@Override
 	public void run(String... strings) throws Exception {
-
-		SparkConf sparkConf = new SparkConf().setMaster("local")
-				.set("spark.mongodb.input.uri", "mongodb://localhost/apache-spark-dataset.book")
-				.set("spark.mongodb.output.uri", "mongodb://localhost/apache-spark-dataset.book")
-				.setAppName("SparkMongoConnector")
-				.set("spark.driver.host", "localhost")
-				.set("spark.driver.allowMultipleContexts", "true")
-				.set("spark.testing.memory", "2147480000");
 
 		Map<String, String> books = new HashMap<>();
 		books.put("collection", "book");
 		books.put("readPreference.name", "secondaryPreferred");
-		ReadConfig bookReadConfig = ReadConfig.create(sparkConf).withOptions(books);
-
-		JavaSparkContext javaSparkContext = new JavaSparkContext(sparkConf);
+		//
+		ReadConfig bookReadConfig = ReadConfig.create(sc.getConf()).withOptions(books);
+		JavaSparkContext javaSparkContext = new JavaSparkContext(sc.getConf());
+		
 
 		JavaMongoRDD<Document> bookRdd = MongoSpark.load(javaSparkContext, bookReadConfig);
 		System.out.println("========================================================================================");
@@ -77,9 +74,6 @@ public class SpringApacheSparkApplication implements CommandLineRunner {
 		//logger.info("Collected book count: " + bookCount);
 		System.out.println("========================================================================================");
 		//
-		//
-		//Dataset<Row> urlsDF = spark.createDataFrame(urlsRDD, Url.class);
-
-
 	}
+	*/
 }
