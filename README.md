@@ -10,4 +10,7 @@
 ![Alt Text](https://github.com/vaquarkhan/springboot-microservice-apache-spark/blob/master/image/Mango-dataset.PNG)
 
 
-2) 
+2) Connect with spark adn mongodb using spark connector 
+
+
+3) Write rest api to get call and fetch data 
