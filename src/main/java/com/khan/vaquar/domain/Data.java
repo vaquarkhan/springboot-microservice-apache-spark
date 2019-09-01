@@ -1,5 +1,9 @@
 package com.khan.vaquar.domain;
-
+/**
+ * 
+ * @author vaquar khan
+ *
+ */
 public class Data {
 
 	private String longDescription;

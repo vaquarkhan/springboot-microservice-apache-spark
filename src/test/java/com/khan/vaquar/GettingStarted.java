@@ -7,7 +7,11 @@ import org.bson.Document;
 import com.mongodb.spark.MongoSpark;
 import com.mongodb.spark.rdd.api.java.JavaMongoRDD;
 
-
+/**
+ * 
+ * @author vaquar khan
+ *
+ */
 public final class GettingStarted {
 
 	  public static void main(final String[] args) throws InterruptedException {

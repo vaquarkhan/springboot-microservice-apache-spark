@@ -9,7 +9,11 @@ import org.apache.spark.sql.SparkSession;
 import org.bson.Document;
 
 import static java.util.Arrays.asList;
-
+/**
+ * 
+ * @author vaquar khan
+ *
+ */
 public final class WriteToMongoDB {
 
   public static void main(final String[] args) throws InterruptedException {

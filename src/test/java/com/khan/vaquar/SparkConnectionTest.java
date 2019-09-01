@@ -8,7 +8,11 @@ import java.util.Map;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
-
+/**
+ * 
+ * @author vaquar khan
+ *
+ */
 public class SparkConnectionTest {
 
 	public static void main(String[] args) {

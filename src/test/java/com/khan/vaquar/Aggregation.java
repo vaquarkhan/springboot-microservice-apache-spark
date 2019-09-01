@@ -8,7 +8,11 @@ import com.mongodb.spark.MongoSpark;
 import com.mongodb.spark.rdd.api.java.JavaMongoRDD;
 
 import static java.util.Collections.singletonList;
-
+/**
+ * 
+ * @author vaquar khan
+ *
+ */
 public final class Aggregation {
 
   public static void main(final String[] args) throws InterruptedException {
