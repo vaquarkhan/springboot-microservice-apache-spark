@@ -77,7 +77,7 @@ public class SpringApacheSparkApplication implements CommandLineRunner {
 		System.out.println("========================================================================================");
 		//
 		//
-		Dataset<Row> urlsDF = spark.createDataFrame(urlsRDD, Url.class);
+		//Dataset<Row> urlsDF = spark.createDataFrame(urlsRDD, Url.class);
 
 
 	}

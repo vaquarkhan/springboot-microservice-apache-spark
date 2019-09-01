@@ -21,11 +21,6 @@ public class SparkConfig {
 		return new SparkConf().setAppName(appName).setMaster(masterUri)	.set("spark.driver.host", "localhost").set("spark.testing.memory", "2147480000");
 
 	}
-
-	
-
-	
-	
 	@Bean
 	public JavaSparkContext sc() {
 		return new JavaSparkContext(conf());
