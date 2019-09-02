@@ -6,9 +6,11 @@
 package com.khan.vaquar.repository;
 
 
+import org.springframework.stereotype.Component;
+
 import com.khan.vaquar.domain.User;
 
-
+@Component
 public class UserRepo {
 
 	public Iterable<User> findAll(){return null;}
