@@ -78,6 +78,8 @@ Complex transaction
 calling url :
 
 http://localhost:8080/books/test
+http://localhost:8080/swagger-ui.html
+
 
 ## Spring 5 Reactive referance
 
